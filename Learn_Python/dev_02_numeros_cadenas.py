@@ -1,6 +1,7 @@
 ###################Numeros
 numero1 = 5
 numero1
+#type nos muestra el tipo de variable
 type(numero1)
 
 numerodecimal = 3.7
@@ -52,12 +53,13 @@ edad = 18 #Segundo argumento.
 ciudad = "Lima"
 print("Buenos dias {}, feliz {} cumpleaños.".format(nombre,edad)) #Formato de asignación de variables.
 
+#otra forma de utiliza la asignacion de variables, mediante {r}
 resultado = 10/3
 resultado
 print("El resultado es {r}".format(r=resultado))
 print("El resultado es {r:1.3f}".format(r=resultado))
 
-#f-string
+#otra forma de utiliza la asignacion de variables, mediante f-string
 nombre = "Antonio"
 edad = 18
 print(f"Buenos días {nombre}, feliz {edad} cumpleaños")
