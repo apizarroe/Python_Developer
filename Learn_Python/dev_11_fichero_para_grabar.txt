@@ -1,0 +1,2 @@
+Hola, esta es la línea que vamos a grabar en el fichero de texto 
+Esto es un salto de línea

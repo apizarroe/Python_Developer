@@ -1,2 +1,0 @@
-Esto es un fichero de ejemplo,
-que tiene 2 líneas de texto
