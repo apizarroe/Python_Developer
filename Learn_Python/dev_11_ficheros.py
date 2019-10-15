@@ -1,3 +1,4 @@
+###################Ficheros Texto
 #Inicializamos el fichero de prueba (Abajo se explica esta función)
 fichero = open("dev_11_fichero_para_leer.txt","wt")
 texto_del_fichero = "Esto es un fichero de ejemplo,\nque tiene 2 líneas de texto"

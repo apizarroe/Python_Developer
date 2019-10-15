@@ -1,7 +1,7 @@
 ###################Variables
 
-"""Estas son las primeras líneas 
-de código en Python"""
+###Estas son las primeras líneas 
+###de código en Python
 cadena = "Hola mundo"
 print(cadena)
 
