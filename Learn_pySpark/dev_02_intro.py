@@ -38,3 +38,4 @@ print(" ")
 for l in quijssancs.takeSample(False,10): #Se toma una muestra de 10 y se imprimen
     print(l)
 
+sc.stop()
