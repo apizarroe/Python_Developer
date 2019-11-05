@@ -27,6 +27,8 @@ print(lista)
 # mergeCombiners mezcla los resultados de las diferentes particiones mediante func3
 # Los valores del RDD de salida pueden tener un tipo diferente al de los valores del RDD de entrada.
 # Para cada clave, obten una tupla que tenga la suma y el número de valores
+print("Esto tiene el prdd")
+print(prdd.take(10))
 sumCount = prdd.combineByKey(
                             (lambda x: (x, 1)),
                             (lambda x, y: (x[0]+y, x[1]+1)),
