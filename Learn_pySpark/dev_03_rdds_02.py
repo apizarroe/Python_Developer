@@ -30,7 +30,7 @@ print("1-2-3-4-5-6-7-8-9 = {0}".format(p))
 # Comportamiento diferente a las operaciones fold de lenguajes como Scala
 # El operador se aplica a nivel de partición (usando cero como valor inicial), y finalmente entre todas las particiones (usando cerode nuevo)
 # Para operadores no conmutativos el resultado podría ser diferente del obtenido mediante un fold secuencial
-rdd = sc.parallelize([range(1,5), range(-10,-3), ['a','b','c']])
+rdd = sc.parallelize([list(range(1,5)), list(range(-10,-3)), ['a','b','c']])
 print(rdd.glom().collect())
 f = rdd.fold([], lambda x,y: x+y)
 print(f)

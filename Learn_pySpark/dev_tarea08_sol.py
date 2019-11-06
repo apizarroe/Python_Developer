@@ -11,7 +11,7 @@ sc = pyspark.SparkContext(appName="myAppName")
 from pyspark.sql import SparkSession
 spark = SparkSession(sc)
 
-rdd = sc.textFile("cite75_99.txt").filter(lambda x: '"CITING"' not in x).map(lambda l: l.split(","))
+rdd = sc.textFile("./datos/cite75_99.txt").filter(lambda x: '"CITING"' not in x).map(lambda l: l.split(","))
 dfCitas = rdd.toDF(["Citante","Citada"]).cache()
 grupoCitas = dfCitas.groupBy("Citada")
 dfCuenta = grupoCitas.count().withColumnRenamed("count","Ncitas").cache()
