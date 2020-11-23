@@ -19,6 +19,7 @@ def borrar():
 def pulsar(valor):
     global operacion
     global resultado
+    operacion = operacion + str(valor)
     pantalla.delete(0,END)
     pantalla.insert(0,operacion)
 
