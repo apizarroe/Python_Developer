@@ -5,7 +5,7 @@ class Fichero:
 
     def leer_fichero(self):
         fichero = open(self.nombre,"rt")
-        texto = fichero.read().encode("windows-1252").decode("utf-8")
+        texto = fichero.read()
         return  texto
     
     def grabar_fichero(self,texto):
