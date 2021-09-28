@@ -5,7 +5,7 @@ def multiplicar(numero1,numero2):
 resultado = multiplicar(2,4)
 print(resultado)
 
-import unittest
+import unittest #Se importa el metodo unittest
 
 class pruebas(unittest.TestCase):
 
